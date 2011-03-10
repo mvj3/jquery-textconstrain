@@ -109,4 +109,4 @@
         trailingString: '...'
     };
 
-})(cmg.query);
+})(jQuery);

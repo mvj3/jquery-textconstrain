@@ -7,7 +7,7 @@ A jQuery plugin to allow text elements on a page to be constrained by size (curr
 
 ## Usage:
 
->        cmg.query('.cmTextElement').cmtextconstrain({
+>        $query('.cmTextElement').cmtextconstrain({
 >                event: 'click', // for future extensibility to allow other events
 >                onExpose: function(){}, // a function to be run once the element is exposed
 >                onConstrain: function(){}, // a function to be run once the element is constrained
@@ -19,4 +19,4 @@ A jQuery plugin to allow text elements on a page to be constrained by size (curr
 
 ## Methods:
 
->        cmg.query('.cmTextElement').cmtextconstrain('destroy'); // destroy the instance of cmtextconstrain
+>        $query('.cmTextElement').cmtextconstrain('destroy'); // destroy the instance of cmtextconstrain
