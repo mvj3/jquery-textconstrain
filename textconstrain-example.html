@@ -28,7 +28,7 @@
         <h1>cmtextconstrain plugin for jQuery</h1>
         <div class="explanation">
             <h4>Use:</h4>
-            <pre><code>$query('.cmTextElement').cmtextconstrain({
+            <pre><code>$('.cmTextElement').cmtextconstrain({
     event: 'click', <span class="note">// for future extensibility to allow other events</span>
     onExpose: function(){}, <span class="note">// a function to be run once the element is exposed</span>
     onConstrain: function(){}, <span class="note">// a function to be run once the element is constrained</span>
@@ -38,7 +38,7 @@
     trailingString: '...' <span class="note">// string to show at end of truncated text</span>
     });</code></pre>
                 <h4>Methods:</h4>
-                <pre><code>$query('.cmTextElement').cmtextconstrain('destroy'); <span class="note">// destroy the instance of cmtextconstrain</span></code></pre>
+                <pre><code>$('.cmTextElement').cmtextconstrain('destroy'); <span class="note">// destroy the instance of cmtextconstrain</span></code></pre>
             <ul>
                 <li><a href="js/jquery/jquery.cmtextconstrain.js" target="_blank">View jquery.cmtextconstrain.js</a></li>
             </ul>
@@ -54,8 +54,8 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <script src="js/jquery/jquery.cmtextconstrain.js" type="text/javascript"></script>
 <script type="text/javascript">
-$query(document).ready(function(){
-    $query('.cmTextElement').cmtextconstrain({
+$(document).ready(function(){
+    $('.cmTextElement').cmtextconstrain({
         restrict: {type: 'words', limit: 6},
         showControl: {string: '[&nbsp;+&nbsp;]', title: 'Show More', addclass: 'cmShowHide'},
         hideControl: {string: '[&nbsp;-&nbsp;]', title: 'Show Less', addclass: 'cmShowHide'},
