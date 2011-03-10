@@ -3,6 +3,10 @@ Text-constrain plugin for jQuery
 
 A jQuery plugin to allow text elements on a page to be constrained by size (currently by words or by characters).
 
+## Demo
+
+View the [demo page](http://coxmediagroup.github.com/jquery-textconstrain/ "on github").
+
 ***
 
 ## Usage:
@@ -20,3 +24,8 @@ A jQuery plugin to allow text elements on a page to be constrained by size (curr
 ## Methods:
 
 >        $('.cmTextElement').cmtextconstrain('destroy'); // destroy the instance of cmtextconstrain
+
+***
+## License
+
+jquery-locksize is licensed under the MIT License. The project is founded by [CMGdigital](http://www.cmgdigital.com).
