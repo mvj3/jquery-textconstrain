@@ -50,6 +50,14 @@
                                 nextChar = $elemClone.text().charAt(charPointer++);
                             }
                         }
+                    } else if(opts.restrict['type'] == 'unicode') {
+                        var wordArr = $elemClone.text().match(/[^\x00-\xff]/ig);
+                        if(wordArr.length <= opts.restrict['limit']){
+                            $this.cmtextconstrain('destroy');
+                            return;
+                        } else {
+                            var shortString = wordArr.slice(0,opts.restrict['limit']).join('');
+                        }
                     }
                     shortString += opts.trailingString;
                     
